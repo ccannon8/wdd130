@@ -1,54 +1,239 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta Charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gravitas+One&family=Poppins:wght@400&display=swap" rel="stylesheet">
    
-    <link rel="stylesheet" href="wrr/styles/styles.css">
-  </head>
+    <title>About Us - Adventure Rafters</title>
+    <style>
+        /* Color Variables */
+        :root {
+            --primary-color: #33658a;
+            --secondary-color: #86bbd8;
+            --accent1-color: #e7df36;
+            --accent2-color: #d56f3e;
+        }
+
+        /* Font Variables */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        header {
+            background-color: var(--secondary-color);
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header nav {
+            margin-right: auto; /* Push the nav to the left */
+            display: flex;
+            gap: 15px;
+        }
+
+        header img {
+            margin-left: 20px;
+            height: 60px; /* Adjust the logo size if needed */
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        header nav a:hover {
+            color: var(--accent1-color);
+        }
+
+        .hero {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .hero img {
+            width: 100%;
+            height: auto;
+        }
+
+        .hero h1 {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'Gravitas One', sans-serif;
+            font-size: 4em;
+            color: black;
+        }
+
+        .hero p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70%;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .history {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 40px 20px;
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+        }
+
+        .history .text-block, 
+        .history .image-block {
+            width: 30%;
+        }
+
+        .history .image-block img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .adventure {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .adventure h2 {
+            font-family: 'Gravitas One', sans-serif;
+            font-size: 2.5em;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .grid {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            overflow-x: auto; /* Allow scrolling horizontally if needed */
+        }
+
+        .grid-item {
+            flex: 0 0 auto; /* Prevent shrinking */
+            width: 200px; /* Set a fixed width for each item */
+            text-align: center;
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: 150px; /* Set a fixed height for uniformity */
+            object-fit: cover; /* Ensure the image covers the area without distortion */
+            border-radius: 5px;
+        }
+
+        .grid-item p {
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: var(--primary-color);
+        }
+
+        footer {
+            background-color: var(--secondary-color);
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer nav a {
+            margin: 0 10px;
+            color: var(--primary-color);
+        }
+
+        footer nav a:hover {
+            color: var(--accent1-color);
+        }
+
+        footer p {
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+    </style>
+</head>
 <body>
- <header>
-    <img src="images/logo.png" alt="Rafting Logo">
+    <header>
         <nav>
             <a href="index.html">Home</a>
-            <a href="about.html">About</a>
+            <a href="about.html">About Us</a>
             <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact</a>
-          </nav>
- </header>
- <main>
- <div class="hero">
-    <img src="images/raftinghero.jpg" alt="Main Image">
-    <h1> Adventure Rafters</h1>
-    <article>
-     <img src="images/raftingarticle.jpg" alt="Red Rocks">
-     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </article>
- </div>
-    <section>
-     <h2>History</h2>
-     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </section>
-    <section>
-     <h2>Adventure Awaits You!</h2>
-     <img src="images/raftingone.jpg" alt="Yellow Raft">
-     <img src="images/raftingtwo.png" alt="Happy People">
-     <img src="images/rafting3.jpg" alt="Red Raft">
-     <img src="images/rafting4.jpg" alt="Narrow River">
-     <img src="images/rafting5.jpg" alt="Cool Water">
-    </section>
- </main>
- <footer>
-    <p>©️2024 💠 Camren Cannon 💠 Idaho</p>
-    <nav class="sociallinks">
-        <a href="">
-         <img src="images/facebook.webp" alt="Facebook">
-         <img src="images/twitter.webp" alt="Twitter">
-         <img src="images/instagram.webp" alt="Instagram">
-        </a>
-    </nav>
-</footer>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+        <img src="images/logo.png" alt="Rafting Logo">
+    </header>
+
+    <main>
+        <div class="hero">
+            <img src="images/raftinghero.jpg" alt="White Water Rafting">
+            <h1>White Water Rafting</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque...</p>
+        </div>
+
+        <section class="history">
+            <div class="text-block">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque...</p>
+            </div>
+            <div class="image-block">
+                <img src="images/history.jpg" alt="History Image">
+            </div>
+            <div class="text-block">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque...</p>
+            </div>
+        </section>
+
+        <section class="adventure">
+            <h2>Adventure Awaits You!</h2>
+            <div class="grid">
+                <div class="grid-item">
+                    <img src="images/raftingone.jpg" alt="Yellow Raft">
+                    <p>Caption 1</p>
+                </div>
+                <div class="grid-item">
+                    <img src="images/raftingtwo.png" alt="Happy People">
+                    <p>Caption 2</p>
+                </div>
+                <div class="grid-item">
+                    <img src="images/rafting3.jpg" alt="Red Raft">
+                    <p>Caption 3</p>
+                </div>
+                <div class="grid-item">
+                    <img src="images/rafting4.jpg" alt="Narrow River">
+                    <p>Caption 4</p>
+                </div>
+                <div class="grid-item">
+                    <img src="images/rafting5.jpg" alt="Cool Water">
+                    <p>Caption 5</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>©️2024 💠 Camren Cannon 💠 Idaho</p>
+        <nav class="sociallinks">
+            <a href="https://www.facebook.com/yourpage" target="_blank">
+                <img src="images/facebook.webp" alt="Follow us on Facebook">
+            </a>
+            <a href="https://www.twitter.com/yourpage" target="_blank">
+                <img src="images/twitter.webp" alt="Follow us on Twitter">
+            </a>
+            <a href="https://www.instagram.com/yourpage" target="_blank">
+                <img src="images/instagram.webp" alt="Follow us on Instagram">
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>
