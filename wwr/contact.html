@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Adventure Rafters</title>
+    <meta name="description" content="Get in touch with Adventure Rafters for general inquiries, reservations, or website suggestions. Visit us, meet our team, or reach out through the contact form." />
+    
+    <style>
+        /* Color Variables */
+        :root {
+            --primary-color: #33658a;
+            --secondary-color: #86bbd8;
+            --accent1-color: #e7df36;
+            --accent2-color: #d56f3e;
+        }
+
+        /* Font Variables */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        header {
+            background-color: var(--secondary-color);
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header nav {
+            margin-right: auto;
+            display: flex;
+            gap: 15px;
+        }
+
+        header img {
+            margin-left: 20px;
+            height: 60px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        header nav a:hover {
+            color: var(--accent1-color);
+        }
+
+        /* Contact Page Specific Styling */
+        .company-info {
+            padding: 40px 20px;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .company-info h2 {
+            font-family: 'Gravitas One', sans-serif;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .map iframe {
+            width: 100%;
+            height: 300px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        /* Employee Profiles Section */
+        .employee-profiles {
+            padding: 40px 20px;
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .employee-profiles h2 {
+            font-family: 'Gravitas One', sans-serif;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .profile {
+            display: inline-block;
+            width: 30%;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .profile img {
+            width: 80%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .profile p {
+            margin-top: 10px;
+            font-size: 1em;
+        }
+
+        /* Contact Form Section */
+        .contact-form {
+            padding: 40px 20px;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            border-radius: 10px;
+            text-align: center;
+            max-width: 600px;
+            margin: 40px auto;
+        }
+
+        .contact-form h2 {
+            font-family: 'Gravitas One', sans-serif;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-form label {
+            text-align: left;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid var(--primary-color);
+            font-size: 1em;
+        }
+
+        .contact-form textarea {
+            height: 100px;
+        }
+
+        .contact-form input[type="radio"],
+        .contact-form input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .contact-form button {
+            background-color: var(--primary-color);
+            color: white;
+            font-size: 1.1em;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: var(--accent1-color);
+        }
+
+        /* Centered Radio Group Styling */
+        .radio-group {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        .radio-group label {
+            margin-right: 10px;
+        }
+
+        /* Horizontal Social Links */
+        .sociallinks {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .sociallinks a {
+            display: inline-block;
+        }
+
+        /* Footer Styling */
+        footer a {
+            color: var(--accent2-color);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: var(--secondary-color);
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer nav a {
+            margin: 0 10px;
+            color: var(--primary-color);
+        }
+
+        footer nav a:hover {
+            color: var(--accent1-color);
+        }
+
+        footer p {
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+        <img src="images/logo.png" alt="Rafting Logo">
+    </header>
+    
+    <main>
+        <section class="company-info">
+            <h2>Contact Information</h2>
+            <p>Address: 123 Rafting St, Boise, ID 83702</p>
+            <p>Phone: (208) 555-1234</p>
+            <p>Email: info@adventurerafters.com</p>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?..."></iframe>
+            </div>
+        </section>
+
+        <section class="employee-profiles">
+            <h2>Meet Our Team</h2>
+            <div class="profile">
+                <img src="images/employee1.jfif" alt="Employee 1">
+                <p>John Doe - Trip Leader</p>
+            </div>
+            <div class="profile">
+                <img src="images/employee2.jfif" alt="Employee 2">
+                <p>Jane Smith - Safety Coordinator</p>
+            </div>
+            <div class="profile">
+                <img src="images/employee3.jfif" alt="Employee 3">
+                <p>Mike Johnson - Customer Service</p>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <p>Reason for Contact:</p>
+                <div class="radio-group">
+                    <input type="radio" id="general" name="purpose" value="General Inquiry">
+                    <label for="general">General Inquiry</label>
+                    <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                    <label for="reservation">Reservation Question</label>
+                    <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                    <label for="suggestion">Website Suggestion</label>
+                </div>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>©️2024 💠 Camren Cannon 💠 Idaho</p>
+        <nav class="sociallinks">
+            <a href="https://www.facebook.com/yourpage" target="_blank"><img src="images/facebook.webp" alt="Follow us on Facebook"></a>
+            <a href="https://www.twitter.com/yourpage" target="_blank"><img src="images/twitter.webp" alt="Follow us on Twitter"></a>
+            <a href="https://www.instagram.com/yourpage" target="_blank"><img src="images/instagram.webp" alt="Follow us on Instagram"></a>
+        </nav>
+        <a href="wireframe-image-link.jpg">View Wireframe</a>
+    </footer>
+</
