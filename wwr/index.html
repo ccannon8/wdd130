@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Rafters - Home</title>
+    <meta name="description" content="Experience thrilling white-water rafting adventures. Join us for an unforgettable journey down wild rivers with Adventure Rafters." />
+    
+    <style>
+        /* Color Variables */
+        :root {
+            --primary-color: #33658a;
+            --secondary-color: #86bbd8;
+            --accent1-color: #e7df36;
+            --accent2-color: #d56f3e;
+        }
+
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--secondary-color);
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header nav {
+            margin-right: auto;
+            display: flex;
+            gap: 15px;
+        }
+
+        header img {
+            margin-left: 20px;
+            height: 60px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        header nav a:hover {
+            color: var(--accent1-color);
+        }
+
+        /* Hero Image Styling */
+        .hero {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: auto;
+        }
+
+        .hero h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2.5em;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px 20px;
+        }
+
+        /* CSS Grid Layout */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding: 40px 20px;
+        }
+
+        .grid-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .grid-item p {
+            text-align: center;
+            color: var(--primary-color);
+            margin-top: 10px;
+        }
+
+        /* Call to Action Styling */
+        .cta {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .cta-button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: white;
+            background-color: var(--primary-color);
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .cta-button:hover {
+            background-color: var(--accent1-color);
+        }
+
+        /* Newsletter Sign-Up Form */
+        .newsletter-signup {
+            padding: 40px 20px;
+            background-color: var(--secondary-color);
+            text-align: center;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 40px auto;
+        }
+
+        .newsletter-signup h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .newsletter-signup form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .newsletter-signup input[type="text"],
+        .newsletter-signup input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid var(--primary-color);
+            font-size: 1em;
+        }
+
+        .newsletter-signup button {
+            background-color: var(--primary-color);
+            color: white;
+            font-size: 1.1em;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .newsletter-signup button:hover {
+            background-color: var(--accent1-color);
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: var(--secondary-color);
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer nav a {
+            margin: 0 10px;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        footer nav a:hover {
+            color: var(--accent1-color);
+        }
+
+        footer p {
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+        <img src="images/logo.png" alt="Rafting Logo">
+    </header>
+    
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="images/hero-image.jpg" alt="Rafting Adventure" class="hero-image">
+            <h1>Join the Adventure - White Water Rafting Awaits!</h1>
+        </section>
+        
+        <!-- Grid Layout Section -->
+        <section class="about-grid">
+            <div class="grid-item">
+                <img src="images/about1.jpg" alt="River Rafting Experience">
+                <p>Experience the thrill of navigating wild rivers with our expert guides.</p>
+            </div>
+            <div class="grid-item">
+                <img src="images/about2.jpg" alt="Team Building">
+                <p>Build unforgettable memories with family and friends on a unique journey.</p>
+            </div>
+        </section>
+        
+        <!-- Call to Action -->
+        <section class="cta">
+            <p>Ready for an unforgettable adventure?</p>
+            <a href="trips.html" class="cta-button">Explore Our Trips</a>
+        </section>
+        
+        <!-- Newsletter Sign-Up Form -->
+        <section class="newsletter-signup">
+            <h2>Sign Up for Our Newsletter</h2>
+            <form>
+                <label for="newsletter-name">Name:</label>
+                <input type="text" id="newsletter-name" name="name" required>
+                
+                <label for="newsletter-email">Email:</label>
+                <input type="email" id="newsletter-email" name="email" required>
+                
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>©️2024 💠 Camren Cannon 💠 Idaho</p>
+        <nav class="sociallinks">
+            <a href="https://www.facebook.com/yourpage" target="_blank"><img src="images/facebook.webp" alt="Follow us on Facebook"></a>
+            <a href="https://www.twitter.com/yourpage" target="_blank"><img src="images/twitter.webp" alt="Follow us on Twitter"></a>
+            <a href="https://www.instagram.com/yourpage" target="_blank"><img src="images/instagram.webp" alt="Follow us on Instagram"></a>
+        </nav>
+        <a href="wireframe-image-link.jpg">View Wireframe</a>
+    </footer>
+</body>
+</html>

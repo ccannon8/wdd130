@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trips - Adventure Rafters</title>
+    <meta name="description" content="Discover exciting rafting adventures and packages offered by Adventure Rafters. Book your next trip today!" />
+
+    <style>
+        /* Color Variables */
+        :root {
+            --primary-color: #33658a;
+            --secondary-color: #86bbd8;
+            --accent1-color: #e7df36;
+            --accent2-color: #d56f3e;
+        }
+
+        /* Font Variables */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        header {
+            background-color: var(--secondary-color);
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header nav {
+            margin-right: auto;
+            display: flex;
+            gap: 15px;
+        }
+
+        header img {
+            margin-left: 20px;
+            height: 60px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        header nav a:hover {
+            color: var(--accent1-color);
+        }
+
+        /* CTA Styling */
+        .cta {
+            background-color: var(--accent1-color);
+            padding: 40px 20px;
+            color: var(--primary-color);
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .cta h2 {
+            font-family: 'Gravitas One', sans-serif;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .cta-button {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            background-color: var(--accent2-color);
+        }
+
+        /* Trip Descriptions */
+        .trip-descriptions {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+            gap: 15px;
+        }
+
+        .trip {
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            width: 30%;
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .trip img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .trip h3 {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+
+        /* Trips Table */
+        .trip-table {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .trip-table h2 {
+            font-family: 'Gravitas One', sans-serif;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: var(--secondary-color);
+        }
+
+        th, td {
+            padding: 15px;
+            border: 1px solid var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        /* Footer Styling */
+        footer a {
+            color: var(--accent2-color);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: var(--secondary-color);
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer nav a {
+            margin: 0 10px;
+            color: var(--primary-color);
+        }
+
+        footer nav a:hover {
+            color: var(--accent1-color);
+        }
+
+        footer p {
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+        <img src="images/logo.png" alt="Rafting Logo">
+    </header>
+
+    <main>
+        <!-- Call to Action -->
+        <section class="cta">
+            <h2>Ready for an Adventure?</h2>
+            <p>Contact us to plan your next rafting trip!</p>
+            <a href="contact.html" class="cta-button">Contact Us</a>
+        </section>
+
+        <!-- Trip Descriptions -->
+        <section class="trip-descriptions">
+            <div class="trip">
+                <img src="images/trip1.jpg" alt="Sunset Rafting Adventure">
+                <h3>Sunset Rafting Adventure</h3>
+                <p>Enjoy a peaceful evening on the water as you paddle through scenic views with the sun setting behind you. Perfect for beginners!</p>
+            </div>
+            <div class="trip">
+                <img src="images/trip2.jpg" alt="Whitewater Thrill">
+                <h3>Whitewater Thrill</h3>
+                <p>Experience the thrill of rushing rapids on this exhilarating trip. For those who want excitement and an unforgettable ride.</p>
+            </div>
+            <div class="trip">
+                <img src="images/trip3.jpg" alt="Family Fun Float">
+                <h3>Family Fun Float</h3>
+                <p>A relaxed and safe rafting trip perfect for families and kids. Spend quality time with loved ones while taking in beautiful scenery.</p>
+            </div>
+        </section>
+
+        <!-- Trips Table -->
+        <section class="trip-table">
+            <h2>Available Trips</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Trip Name</th>
+                        <th>Duration</th>
+                        <th>Difficulty</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sunset Rafting Adventure</td>
+                        <td>2 hours</td>
+                        <td>Easy</td>
+                        <td>$50 per person</td>
+                    </tr>
+                    <tr>
+                        <td>Whitewater Thrill</td>
+                        <td>4 hours</td>
+                        <td>Hard</td>
+                        <td>$120 per person</td>
+                    </tr>
+                    <tr>
+                        <td>Family Fun Float</td>
+                        <td>3 hours</td>
+                        <td>Moderate</td>
+                        <td>$80 per person</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>©️2024 💠 Camren Cannon 💠 Idaho</p>
+        <nav class="sociallinks">
+            <a href="https://www.facebook.com/yourpage" target="_blank"><img src="images/facebook.webp" alt="Follow us on Facebook"></a>
+            <a href="https://www.twitter.com/yourpage" target="_blank"><img src="images/twitter.webp" alt="Follow us on Twitter"></a>
+            <a href="https://www.instagram.com/yourpage" target="_blank"><img src="images/instagram.webp" alt="Follow us on Instagram"></a>
+        </nav>
+        <a href="images/trips_wireframe.jpg">View Trips Page Wireframe</a>
+    </footer>
+</body>
+</html>
