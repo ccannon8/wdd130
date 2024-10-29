@@ -15,34 +15,37 @@
             --accent2-color: #d56f3e;
         }
 
-        /* Font Variables */
+        /* Font and General Styling */
         body {
             font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--primary-color);
         }
 
         header {
             background-color: var(--secondary-color);
-            padding: 20px;
+            padding: 15px 40px;
             display: flex;
             align-items: center;
             justify-content: space-between;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         header nav {
-            margin-right: auto;
             display: flex;
-            gap: 15px;
+            gap: 20px;
         }
 
         header img {
-            margin-left: 20px;
-            height: 60px;
+            height: 50px;
         }
 
         header nav a {
             text-decoration: none;
             color: var(--primary-color);
             font-weight: bold;
+            transition: color 0.3s;
         }
 
         header nav a:hover {
@@ -52,11 +55,13 @@
         /* CTA Styling */
         .cta {
             background-color: var(--accent1-color);
-            padding: 40px 20px;
+            padding: 50px 20px;
             color: var(--primary-color);
             text-align: center;
             border-radius: 10px;
-            margin-bottom: 20px;
+            margin: 30px auto;
+            max-width: 800px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .cta h2 {
@@ -65,15 +70,21 @@
             margin-bottom: 10px;
         }
 
+        .cta p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
         .cta-button {
             background-color: var(--primary-color);
             color: white;
-            padding: 10px 20px;
+            padding: 12px 25px;
             border: none;
             border-radius: 5px;
             font-size: 1.1em;
             text-decoration: none;
             cursor: pointer;
+            transition: background-color 0.3s;
         }
 
         .cta-button:hover {
@@ -86,17 +97,22 @@
             justify-content: space-around;
             flex-wrap: wrap;
             padding: 20px;
-            gap: 15px;
+            gap: 20px;
         }
 
         .trip {
             background-color: var(--secondary-color);
             color: var(--primary-color);
-            width: 30%;
+            width: calc(33% - 40px);
             border-radius: 10px;
             text-align: center;
             padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .trip:hover {
+            transform: translateY(-5px);
         }
 
         .trip img {
@@ -107,13 +123,15 @@
 
         .trip h3 {
             font-size: 1.5em;
-            margin-top: 10px;
+            margin-top: 15px;
         }
 
         /* Trips Table */
         .trip-table {
             padding: 40px 20px;
             text-align: center;
+            max-width: 1000px;
+            margin: auto;
         }
 
         .trip-table h2 {
@@ -138,36 +156,33 @@
         th {
             background-color: var(--primary-color);
             color: white;
+            font-weight: bold;
         }
 
         /* Footer Styling */
-        footer a {
-            color: var(--accent2-color);
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
         footer {
             background-color: var(--secondary-color);
             padding: 20px;
             text-align: center;
+            color: var(--primary-color);
+            font-size: 0.9em;
         }
 
         footer nav a {
             margin: 0 10px;
             color: var(--primary-color);
+            transition: color 0.3s;
         }
 
         footer nav a:hover {
             color: var(--accent1-color);
         }
 
-        footer p {
-            margin-bottom: 10px;
-            color: var(--primary-color);
+        footer img {
+            width: 25px;
+            height: 25px;
+            margin: 0 5px;
+            vertical-align: middle;
         }
     </style>
 </head>
@@ -252,7 +267,7 @@
             <a href="https://www.twitter.com/yourpage" target="_blank"><img src="images/twitter.webp" alt="Follow us on Twitter"></a>
             <a href="https://www.instagram.com/yourpage" target="_blank"><img src="images/instagram.webp" alt="Follow us on Instagram"></a>
         </nav>
-        <a href="images/trips_wireframe.jpg">View Trips Page Wireframe</a>
+        <p><a href="images/trips_wireframe.jpg">View Trips Page Wireframe</a></p>
     </footer>
 </body>
 </html>
