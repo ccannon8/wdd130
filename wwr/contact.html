@@ -4,8 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Adventure Rafters</title>
-    <meta name="description" content="Get in touch with Adventure Rafters for general inquiries, reservations, or website suggestions. Visit us, meet our team, or reach out through the contact form." />
-    
+    <meta name="description" content="Get in touch with Adventure Rafters for general inquiries, reservations, or website suggestions. Visit us, meet our team, or reach out through the contact form.">
+    <meta name="author" content="Camren Cannon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Gravitas+One&display=swap" rel="stylesheet">
+
     <style>
         /* Color Variables */
         :root {
@@ -13,6 +19,7 @@
             --secondary-color: #86bbd8;
             --accent1-color: #e7df36;
             --accent2-color: #d56f3e;
+            --text1-color: black;
         }
 
         /* Font Variables */
@@ -41,7 +48,7 @@
 
         header nav a {
             text-decoration: none;
-            color: var(--primary-color);
+            color: var(--text1-color);
             font-weight: bold;
         }
 
@@ -53,7 +60,7 @@
         .company-info {
             padding: 40px 20px;
             background-color: var(--secondary-color);
-            color: var(--primary-color);
+            color: var(--text1-color);
             text-align: center;
             border-radius: 10px;
             margin-bottom: 20px;
@@ -110,7 +117,7 @@
         .contact-form {
             padding: 40px 20px;
             background-color: var(--secondary-color);
-            color: var(--primary-color);
+            color: var(--text1-color);
             border-radius: 10px;
             text-align: center;
             max-width: 600px;
@@ -193,6 +200,16 @@
         }
 
         /* Footer Styling */
+        footer {
+            background-color: var(--secondary-color);
+            padding: 20px;
+            text-align: center; /* Centers text and elements within the footer */
+        }
+
+        footer p, footer nav, footer a {
+            margin: 0 auto; /* Centers each item within the footer */
+        }
+
         footer a {
             color: var(--accent2-color);
             text-decoration: none;
@@ -200,26 +217,6 @@
 
         footer a:hover {
             text-decoration: underline;
-        }
-
-        footer {
-            background-color: var(--secondary-color);
-            padding: 20px;
-            text-align: center;
-        }
-
-        footer nav a {
-            margin: 0 10px;
-            color: var(--primary-color);
-        }
-
-        footer nav a:hover {
-            color: var(--accent1-color);
-        }
-
-        footer p {
-            margin-bottom: 10px;
-            color: var(--primary-color);
         }
     </style>
 </head>
@@ -235,13 +232,15 @@
     </header>
     
     <main>
+        <h1>Contact Adventure Rafters</h1>
+
         <section class="company-info">
             <h2>Contact Information</h2>
             <p>Address: 123 Rafting St, Boise, ID 83702</p>
             <p>Phone: (208) 555-1234</p>
             <p>Email: info@adventurerafters.com</p>
             <div class="map">
-                <iframe src="https://www.google.com/maps/embed?..."></iframe>
+                <iframe src="https://www.google.com/maps/embed?..." title="Adventure Rafters Location Map"></iframe>
             </div>
         </section>
 

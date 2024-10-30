@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about River Rush Adventures, a whitewater rafting company founded in 1987, known for thrilling rafting experiences and scenic expeditions.">
+    <meta name="author" content="Camren Cannon">
+    
+    <title>About Us - Adventure Rafters</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gravitas+One&family=Poppins:wght@400&display=swap" rel="stylesheet">
-   
-    <title>About Us - Adventure Rafters</title>
+    
     <style>
         /* Color Variables */
         :root {
@@ -16,6 +19,7 @@
             --secondary-color: #86bbd8;
             --accent1-color: #e7df36;
             --accent2-color: #d56f3e;
+            --text1-color: black;
         }
 
         /* Font Variables */
@@ -32,19 +36,19 @@
         }
 
         header nav {
-            margin-right: auto; /* Push the nav to the left */
+            margin-right: auto;
             display: flex;
             gap: 15px;
         }
 
         header img {
             margin-left: 20px;
-            height: 60px; /* Adjust the logo size if needed */
+            height: 60px;
         }
 
         header nav a {
             text-decoration: none;
-            color: var(--primary-color);
+            color: var(--text1-color);
             font-weight: bold;
         }
 
@@ -82,7 +86,6 @@
             background-color: rgba(0, 0, 0, 0.5);
             padding: 20px;
             border-radius: 10px;
-            font-family: 'Poppins', sans-serif;
         }
 
         .history {
@@ -105,6 +108,13 @@
             border-radius: 10px;
         }
 
+        .vision {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: var(--secondary-color);
+            color: var(--text1-color);
+        }
+
         .adventure {
             text-align: center;
             padding: 40px 20px;
@@ -121,26 +131,26 @@
             display: flex;
             gap: 20px;
             justify-content: center;
-            overflow-x: auto; /* Allow scrolling horizontally if needed */
+            overflow-x: auto;
         }
 
         .grid-item {
-            flex: 0 0 auto; /* Prevent shrinking */
-            width: 200px; /* Set a fixed width for each item */
+            flex: 0 0 auto;
+            width: 200px;
             text-align: center;
         }
 
         .grid-item img {
             width: 100%;
-            height: 150px; /* Set a fixed height for uniformity */
-            object-fit: cover; /* Ensure the image covers the area without distortion */
+            height: 150px;
+            object-fit: cover;
             border-radius: 5px;
         }
 
-        .grid-item p {
+        .grid-item figcaption {
             margin-top: 10px;
             font-size: 0.9em;
-            color: var(--primary-color);
+            color: var(--text1-color);
         }
 
         footer {
@@ -160,7 +170,7 @@
 
         footer p {
             margin-bottom: 10px;
-            color: var(--primary-color);
+            color: var(--text1-color);
         }
     </style>
 </head>
@@ -179,44 +189,49 @@
         <div class="hero">
             <img src="images/raftinghero.jpg" alt="White Water Rafting">
             <h1>White Water Rafting</h1>
-            <p>Whitewater rafting is an adventurous outdoor activity where participants navigate a river's fast-moving, turbulent waters in an inflatable raft. Guided by paddling techniques, teams work together to steer through rapids, which range in difficulty from gentle, easy waves to intense, challenging cascades. Set against scenic landscapes, whitewater rafting combines the thrill of overcoming natural obstacles with the beauty of nature, making it a popular choice for adrenaline seekers and nature enthusiasts alike.</p>
+            <p>Whitewater rafting is an adventurous outdoor activity where participants navigate a river's fast-moving, turbulent waters in an inflatable raft...</p>
         </div>
 
         <section class="history">
             <div class="text-block">
-                <p>River Rush Adventures began in 1987 when three thrill-seeking friends decided to transform their love for rafting into a small business. It all started with a single raft and a dream, guiding small groups down the frothy waters of the fictional Wildcat River in Colorado. By the early ‘90s, word of mouth turned their rugged, family-owned operation into a local favorite, known for its personalized tours and the crew’s unmatched knowledge of the river’s twists and turns.</p>
+                <p>River Rush Adventures began in 1987...</p>
             </div>
             <div class="image-block">
                 <img src="images/history.jpg" alt="History Image">
             </div>
             <div class="text-block">
-                <p>In 1995, River Rush Adventures expanded its fleet, adding specialized rafts for beginners, families, and adrenaline junkies. By the 2000s, it became a go-to destination for corporate team-building retreats, river expeditions, and even night-rafting under a full moon. Today, River Rush Adventures is still family-run, with a legacy of teaching generations of rafters the thrills and skills of whitewater. They’re known for their legendary “Big Cat Rapids” course and their motto: “Adventure Begins Here!”</p>
+                <p>In 1995, River Rush Adventures expanded...</p>
             </div>
+        </section>
+
+        <section class="vision">
+            <h2>Our Vision</h2>
+            <p>River Rush Adventures is dedicated to delivering thrilling, safe, and unforgettable rafting experiences for all skill levels.</p>
         </section>
 
         <section class="adventure">
             <h2>Adventure Awaits You!</h2>
             <div class="grid">
-                <div class="grid-item">
+                <figure class="grid-item">
                     <img src="images/raftingone.jpg" alt="Yellow Raft">
-                    <p>Ride the Rapids</p>
-                </div>
-                <div class="grid-item">
+                    <figcaption>Ride the Rapids</figcaption>
+                </figure>
+                <figure class="grid-item">
                     <img src="images/raftingtwo.png" alt="Happy People">
-                    <p>Thrill of Nature</p>
-                </div>
-                <div class="grid-item">
+                    <figcaption>Thrill of Nature</figcaption>
+                </figure>
+                <figure class="grid-item">
                     <img src="images/rafting3.jpg" alt="Red Raft">
-                    <p>Paddle Together</p>
-                </div>
-                <div class="grid-item">
+                    <figcaption>Paddle Together</figcaption>
+                </figure>
+                <figure class="grid-item">
                     <img src="images/rafting4.jpg" alt="Narrow River">
-                    <p>Conquer the Waves</p>
-                </div>
-                <div class="grid-item">
+                    <figcaption>Conquer the Waves</figcaption>
+                </figure>
+                <figure class="grid-item">
                     <img src="images/rafting5.jpg" alt="Cool Water">
-                    <p>Pure River Adventure/p>
-                </div>
+                    <figcaption>Pure River Adventure</figcaption>
+                </figure>
             </div>
         </section>
     </main>
